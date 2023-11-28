@@ -1,0 +1,35 @@
+<mvc:View controllerName="client.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <content>
+    	<l:VerticalLayout id="_IDGenVerticalLayout1"
+		class="sapUiContentPadding"
+		width="100%">
+		<l:content>
+			<List id="_IDGenList1"
+				binding="{/header}"
+				headerText="Header Details" >
+				<DisplayListItem id="_IDGenDisplayListItem1"
+					label="header1"
+					value="{header1}" />
+				<DisplayListItem id="_IDGenDisplayListItem2"
+					label="header2"
+					value="{header2}" />                    
+			</List>
+			<List id="_IDGenList2"
+				binding="{/item}"
+				headerText="Header Details" >
+				<DisplayListItem id="_IDGenDisplayListItem3" 
+					label="item1"
+					value="{item1}" />
+				<DisplayListItem id="_IDGenDisplayListItem4"
+					label="item2"
+					value="{item2}" />                    
+			</List>            
+		</l:content>
+	</l:VerticalLayout>
+    </content>
+    </Page>
+</mvc:View>

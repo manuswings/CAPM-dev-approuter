@@ -1,0 +1,20 @@
+{
+  "xsappname":"document_extractor-xsuaa",
+  "tenant-mode":"dedicated",
+  "scopes": [
+    {
+      "name":"$XSAPPNAME.admin",
+      "description": ":document_extractor admin"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name":"admin",
+      "description": "document_extractor admin",
+      "scope-references":[
+        "$XSAPPNAME.admin"
+      ]
+    }
+  ]
+}

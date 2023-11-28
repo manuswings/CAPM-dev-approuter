@@ -1,0 +1,20 @@
+{
+    "welcomeFile": "@document_reader/client/index.html",
+    "authenticationMethod": "route",
+    "routes": [
+      {
+        "source": "^/user-api(.*)",
+        "target": "$1",
+        "service": "sap-approuter-userapi"
+      },
+      {
+        "dependency": "@document_reader/server",
+        "authenticationType": "xsuaa"
+      },
+      {
+        "dependency": "@document_reader/client",
+        "authenticationType": "xsuaa"
+      }
+    ]
+  }
+  

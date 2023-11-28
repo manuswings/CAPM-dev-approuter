@@ -1,0 +1,39 @@
+{
+    "CDS_PORT": 5001,
+    "destinations":[
+        {
+            "Name":"@document_reader/server",
+            "Authentication":"NoAuthentication",
+            "ProxyType":"Internet",
+            "Type":"HTTP",
+            "URL":"http://localhost:4004",
+            "forwardAuthToken":true
+        }
+    ],  
+    "VCAP_SERVICES":{
+        "xsuaa":[
+            {
+                "tags" : [
+                    "xsuaa"
+                ],
+                "credentials": {
+                    "apiurl": "https://api.authentication.us10.hana.ondemand.com",
+                    "clientid": "sb-document_extractor-xsuaa!t213472",
+                    "clientsecret": "a47+FpeAOKQ6Gv/A2fpgG4tRcaI=",
+                    "credential-type": "instance-secret",
+                    "identityzone": "fd26151btrial",
+                    "identityzoneid": "ec34e090-cf00-4818-a32f-1529d4c0ecdd",
+                    "sburl": "https://internal-xsuaa.authentication.us10.hana.ondemand.com",
+                    "subaccountid": "ec34e090-cf00-4818-a32f-1529d4c0ecdd",
+                    "tenantid": "ec34e090-cf00-4818-a32f-1529d4c0ecdd",
+                    "tenantmode": "dedicated",
+                    "uaadomain": "authentication.us10.hana.ondemand.com",
+                    "url": "https://fd26151btrial.authentication.us10.hana.ondemand.com",
+                    "verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAroMbis6pSet77x5uDGF8\nW9qu5BWRn+mNC8JRgLRZGfuOAmgMqPNEoykdeb2p/Qo3jghVl1bu00QyFlz7NFFl\nGa/kmFMCDE2O/ierWuGCEYrGt66/oChDbmuVGyfVvlWTVBjKzROtPCSiQ/xAYEce\n0sOgvASbqoi5O9wNEhpVnCZsRqwB+lfmTZQxGAI4tY56Noj22rGIpKKl+M7MJXA8\nJmtdwfK/TGB82AhFDhFCKqhkrDMIrIdJLyHJhdhkYRP8YEkVOzWrVbab3/Yy97h8\nxV20kcDsWafxPIThxA0Q3gdunRC4AAFK1Eo92Qanun3S6lEKiRz8GvvsqG2uExiX\nxwIDAQAB\n-----END PUBLIC KEY-----",
+                    "xsappname": "document_extractor-xsuaa!t213472",
+                    "zoneid": "ec34e090-cf00-4818-a32f-1529d4c0ecdd"
+                  }                
+            }
+        ]
+    }
+  }

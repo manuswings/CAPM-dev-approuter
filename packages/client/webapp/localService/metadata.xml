@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+        <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml">
+        <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="services" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <EntityContainer Name="EntityContainer">
+                <EntitySet Name="header" EntityType="services.header"/>
+                <EntitySet Name="item" EntityType="services.item"/>
+            </EntityContainer>
+            <EntityType Name="header">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="header1" Type="Edm.String"/>
+                <Property Name="header2" Type="Edm.String"/>
+                <Property Name="header3" Type="Edm.String"/>
+                <Property Name="header4" Type="Edm.String"/>
+                <Property Name="header5" Type="Edm.String"/>
+                <Property Name="header6" Type="Edm.String"/>
+                <Property Name="header7" Type="Edm.String"/>
+                <Property Name="header8" Type="Edm.String"/>
+                <Property Name="header9" Type="Edm.String"/>
+                <Property Name="header10" Type="Edm.String"/>
+            </EntityType>
+            <EntityType Name="item">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="item1" Type="Edm.String"/>
+                <Property Name="item2" Type="Edm.String"/>
+                <Property Name="item3" Type="Edm.String"/>
+                <Property Name="item4" Type="Edm.String"/>
+                <Property Name="item5" Type="Edm.String"/>
+                <Property Name="item6" Type="Edm.String"/>
+                <Property Name="item7" Type="Edm.String"/>
+                <Property Name="item8" Type="Edm.String"/>
+                <Property Name="item9" Type="Edm.String"/>
+                <Property Name="item10" Type="Edm.String"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
