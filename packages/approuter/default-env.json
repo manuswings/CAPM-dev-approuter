@@ -1,4 +1,5 @@
 {
+    "PORT": 5002,
     "CDS_PORT": 5001,
     "destinations":[
         {
