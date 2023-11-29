@@ -1,9 +1,8 @@
 {
-    "PORT": 5002,
-    "CDS_PORT": 5001,
+    "PORT":5001,
     "destinations":[
         {
-            "Name":"@document_reader/server",
+            "Name":"document_reader_server",
             "Authentication":"NoAuthentication",
             "ProxyType":"Internet",
             "Type":"HTTP",
@@ -19,8 +18,8 @@
                 ],
                 "credentials": {
                     "apiurl": "https://api.authentication.us10.hana.ondemand.com",
-                    "clientid": "sb-document_extractor-xsuaa!t213472",
-                    "clientsecret": "a47+FpeAOKQ6Gv/A2fpgG4tRcaI=",
+                    "clientid": "sb-document_reader-xsuaa!t213472",
+                    "clientsecret": "1BS1YgwZPABsL9YCiVaG1KzbOso=",
                     "credential-type": "instance-secret",
                     "identityzone": "fd26151btrial",
                     "identityzoneid": "ec34e090-cf00-4818-a32f-1529d4c0ecdd",
@@ -31,9 +30,9 @@
                     "uaadomain": "authentication.us10.hana.ondemand.com",
                     "url": "https://fd26151btrial.authentication.us10.hana.ondemand.com",
                     "verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAroMbis6pSet77x5uDGF8\nW9qu5BWRn+mNC8JRgLRZGfuOAmgMqPNEoykdeb2p/Qo3jghVl1bu00QyFlz7NFFl\nGa/kmFMCDE2O/ierWuGCEYrGt66/oChDbmuVGyfVvlWTVBjKzROtPCSiQ/xAYEce\n0sOgvASbqoi5O9wNEhpVnCZsRqwB+lfmTZQxGAI4tY56Noj22rGIpKKl+M7MJXA8\nJmtdwfK/TGB82AhFDhFCKqhkrDMIrIdJLyHJhdhkYRP8YEkVOzWrVbab3/Yy97h8\nxV20kcDsWafxPIThxA0Q3gdunRC4AAFK1Eo92Qanun3S6lEKiRz8GvvsqG2uExiX\nxwIDAQAB\n-----END PUBLIC KEY-----",
-                    "xsappname": "document_extractor-xsuaa!t213472",
+                    "xsappname": "document_reader-xsuaa!t213472",
                     "zoneid": "ec34e090-cf00-4818-a32f-1529d4c0ecdd"
-                  }                
+                  }
             }
         ]
     }

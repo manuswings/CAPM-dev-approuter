@@ -1,14 +1,14 @@
 {
   "name": "document_reader",
   "scripts": {
-    "dev": "npm run dev-approuter -w packages/server"
+    "dev": "npm run dev-approuter -w packages/document_reader_server"
   },
   "workspaces": [
-    "packages/server",
-    "packages/client",
+    "packages/document_reader_server",
+    "packages/document_reader_client",
     "packages/approuter"
   ],
   "sapux": [
-    "packages/client"
+    "packages/document_reader_client"
   ]  
 }

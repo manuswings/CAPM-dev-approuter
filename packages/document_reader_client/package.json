@@ -1,5 +1,5 @@
 {
-  "name": "@document_reader/client",
+  "name": "document_reader_client",
   "version": "0.0.1",
   "private": true,
   "description": "Document Reader Fiori Application",

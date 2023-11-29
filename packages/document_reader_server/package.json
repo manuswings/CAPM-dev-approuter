@@ -1,5 +1,5 @@
 {
-  "name": "@document_reader/server",
+  "name": "document_reader_server",
   "version": "1.0.0",
   "description": "Document Reader Server",
   "repository": "<Add your repository here>",
@@ -13,14 +13,13 @@
   },
   "devDependencies": {
     "@cap-js/sqlite": "^1",
-    "@document_reader/client": "*",
+    "document_reader_client": "*",
     "cds-plugin-ui5": "^0.7.2"
   },
   "scripts": {
     "start,": "cds-serve",
     "watch-client": "cds watch --open client/index.html?sap-ui-xx-viewCache=false --livereload false",
     "start": "cds-serve",
-    "dev": "cds watch",      
     "dev-approuter": "cds bind --exec -- npm run dev --prefix ../approuter"        
   },
   "cds": {

@@ -1,0 +1,25 @@
+{
+  "xsappname":"document_reader-xsuaa",
+  "tenant-mode":"dedicated",
+  "scopes": [
+    {
+      "name":"$XSAPPNAME.admin",
+      "description": ":document_reader admin"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name":"admin",
+      "description": "document_reader admin",
+      "scope-references":[
+        "$XSAPPNAME.admin"
+      ]
+    }
+  ],
+  "oauth2-configuration": {
+    "redirect-uris": [
+        "https://*.applicationstudio.cloud.sap/**"
+    ]
+}  
+}

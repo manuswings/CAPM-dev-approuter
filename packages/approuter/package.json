@@ -1,12 +1,11 @@
 {
   "name": "approuter",
   "scripts": {
-    "dev": "CDS_ENV=hybrid node -e 'new require(`dev-approuter`)' _",
-    "dev1": "node ../../node_modules/dev-approuter"
+    "dev": "CDS_ENV=hybrid node -e 'new require(`dev-approuter`)' _"
   },
   "devDependencies": {
-    "@document_reader/client": "*",
-    "@document_reader/server": "*",
+    "document_reader_client": "*",
+    "document_reader_server": "*",
     "dev-approuter": "^0.2.7"
   }
 }
